@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
-function Message({messageArray}) {
 
+function Message({}) {
+
+    const messageArray = useSelector((state) => state.message.messages)
 
     return (  
         <div className="message">
